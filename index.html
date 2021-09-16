@@ -4,62 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AVRL Interview</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
 <div class="container">
+
    <div id="header"> 
      <h1> Krishnesh Khalora's Weather App </h1>
    </div>
+
    <div class="app-body">
+
         <div id="side-nav">
-            
-             <div>
-                <button onclick="getWeather()">Get Weather</button>
+            <div>
+                <button id="getWeatherBtn" onclick="getWeather()">Get Weather</button>
                 <table>
                     <tr>
                         <th>City</th>
                     </tr>
-                    <tr>
+                    <tr id="London">
                         <td>London</td>
                     </tr>
-                    <tr>
+                    <tr id="New York">
                         <td>New York</td>
                     </tr>
-                    <tr>
+                    <tr id="Los Angeles">
                         <td>Los Angeles</td>
                     </tr>
-                    <tr>
+                    <tr id="Las Vegas">
                         <td>Las Vegas</td>
                     </tr>
-                   
                 </table>
-                
              </div>
         </div>
+
         <div id="main-page">
-            
             <div>
-              <div>
-                <input type="text" id="text"><button>Search</button>
-              </div>
-            <table  id="myTable">
-                <tr>
-                    <th>City</th>
-                    <th>Description</th>
-                    <th>Tempreature (degree Celsius)</th>
-                    <th>Pressure (hPa)</th>
-                    <th>Data age(hrs)</th>
-                </tr>
-                <tr>
-                   
-                </tr>
-            </table>
-            <div id="noData">""</div>
+                <div>
+                  <input type="text" id="text"><button>Search</button>
+                </div>
+                <table  id="myTable">
+                    <tr>
+                        <th>City</th>
+                        <th>Description</th>
+                        <th>Tempreature (degree Celsius)</th>
+                        <th>Pressure (hPa)</th>
+                        <th>Data age(hrs)</th>
+                    </tr>
+                    <tr></tr>
+                </table>
+                <div id="noData">""</div>
             </div>
         </div>
+
    </div>
+   
 </div>
 
 <script src="app.js"></script>

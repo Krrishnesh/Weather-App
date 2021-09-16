@@ -49,6 +49,7 @@
 button{
     background-color: #4472C4;
     color: #ffff;
+    border-radius: 5px;
 }
 th{
     background-color: #4472C4;
