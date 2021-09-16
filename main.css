@@ -36,6 +36,16 @@
     height:inherit;
     float:right;
 }
+
+#main-page > div{
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
 button{
     background-color: #4472C4;
     color: #ffff;
@@ -61,3 +71,5 @@ table, th, td {
       margin-left: auto;
       margin-right: auto;
   }
+
+ 

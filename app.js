@@ -3,7 +3,13 @@ let i = 0;
 let city = "London";
 const description = [];
 
+if(description.length === 0){
+  document.getElementById("noData").innerHTML = "NO Data";
+} 
+
+
 function getWeather(){
+  
     i += 1
     if(i > 4){
         i = i%4;
@@ -36,7 +42,7 @@ function getWeather(){
    
      var date_current = new Date()
      console.log(date_current)
-     console.log(date_current - myData.date_and_time)
+     console.log(date_current - new Date(myData.date_and_time))
 
      cell1.innerHTML = city;
      cell2.innerHTML = myData.description;
@@ -48,5 +54,9 @@ function getWeather(){
   .catch(error => {
     console.error('There has been a problem with your fetch operation:', error);
   }); 
+
+  if(i > 0){
+    document.getElementById("noData").innerHTML = "";
+  }
 }
 
