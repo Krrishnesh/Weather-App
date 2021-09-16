@@ -32,7 +32,7 @@ function getWeather(){
      description.push(myData)
      currData = myData;
      var table = document.getElementById("myTable");
-     var row = table.insertRow(1);
+     var row = table.insertRow(i+1);
      var cell1 = row.insertCell(0);
      var cell2 = row.insertCell(1);
      var cell3 = row.insertCell(2);
@@ -42,13 +42,13 @@ function getWeather(){
    
      var date_current = new Date()
      console.log(date_current)
-     console.log(date_current - new Date(myData.date_and_time))
+     console.log((new Date() - new Date(myData.date_and_time))/(1000*3600*24))
 
      cell1.innerHTML = city;
      cell2.innerHTML = myData.description;
      cell3.innerHTML = myData.temp_in_celsius;
      cell4.innerHTML = myData.pressure_in_hPa;
-     cell5.innerHTML = (date_current - (myData.date_and_time));
+     cell5.innerHTML = Math.trunc((new Date() - new Date(myData.date_and_time))/(1000*3600*24));
      
   })
   .catch(error => {
